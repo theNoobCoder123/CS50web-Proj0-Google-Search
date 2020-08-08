@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Search</title>
+        <link rel="stylesheet" type="text/css" href="./style.css">
+        <link rel="stylesheet" type="text/css" href=".\bootstrap-4.5.1-dist\css\bootstrap.css">
+    </head>
+    <body>
+        <div class="appbar">
+            <label style="margin: 0px; margin-left:10px">Advanced Search</label>
+        </div>
+        <div style="border-bottom: 1px solid #ebebeb; margin-right: 4px;"></div>
+        <div class="adv-form-div">
+            <form action="https://www.google.com/search">
+                <table class="outer-table">
+                    <tr>
+                        <td class="txt-tcell">
+                            <label class="adv-txt-label" style="font-size: 16px;">Find pages with...</label>
+                        </td>
+                        <td class="inp-tcell">
+                            <div>&nbsp;</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="txt-tcell">
+                            <label class="adv-txt-label">all these words:</label>
+                        </td>
+                        <td class="inp-tcell">
+                            <input type="text" name="as_q" class="adv-txt-field">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="txt-tcell">
+                            <label class="adv-txt-label">this exact word or phrase:</label>
+                        </td>
+                        <td class="inp-tcell">
+                            <input type="text" name="as_epq" class="adv-txt-field">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="txt-tcell">
+                            <label class="adv-txt-label">any of these words:</label>
+                        </td>
+                        <td class="inp-tcell">
+                            <input type="text" name="as_oq" class="adv-txt-field">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="txt-tcell">
+                            <label class="adv-txt-label">none of these words:</label>
+                        </td>
+                        <td class="inp-tcell">
+                            <input type="text" name="as_eq" class="adv-txt-field">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="txt-tcell">
+                            <label class="adv-txt-label">numbers ranging from:</label>
+                        </td>
+                        <td class="inp-tcell">
+                            <div class="adv-txt-field-sm-div">
+                                <input type="text" name="as_nlo" class="adv-txt-field-sm">
+                            </div>
+                            <div id="to">to</div>
+                            <div class="adv-txt-field-sm-div">
+                                <input type="text" name="as_nhi" class="adv-txt-field-sm">
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+                <hr size="82px"/>
+                <h5>Then narrow your results by...</h5>
+                <div>language:<input type="text" name="lr" class="form-ctrl"></div>
+                <input type="text" name="cr" class="form-ctrl">
+                <input type="text" name="as_qdr" class="form-ctrl">
+                <input type="text" name="as_sitesearch" class="form-ctrl">
+                <input type="text" name="as_occt" class="form-ctrl">
+                <input type="hidden" name="safe" value="active" class="form-ctrl">
+                <input type="text" name="as_filetype" class="form-ctrl">
+                <input type="text" name="tbs" class="form-ctrl">
+                <input type="submit" value="Advanced search" class="btn btn-secondary"></input>
+            </form>
+        </div>
+        <center>
+            <div class="btn-group" role="group" aria-label="Basic example">
+                <button type="Google Search" class="btn btn-secondary"><a style= "color: inherit" href="index.html">Text Search</a></button>
+                <button type="Google Image Search" class="btn btn-secondary"><a style= "color: inherit" href="img_search.html">Image Search</a></button>
+                <button disabled=true type="Google Advanced Search" class="btn btn-secondary">Advanced Search</button>
+            </div>
+        </center>
+    </body>
+</html>
